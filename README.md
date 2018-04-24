@@ -5,13 +5,13 @@ ES2015 Template Tag for JSON. Powered by [Proxy](https://developer.mozilla.org/e
 
 ## Usage
 ```js
-import hs from 'hassium'
+import hs from "hassium";
 
-const wrapBooleanInObject = hs`{"x": ${Boolean}}`
-wrapBooleanInObject({})
-  // => {"x": true}
+const wrapBooleanInObject = hs`{"x": ${Boolean}}`;
+wrapBooleanInObject({});
+  // => { "x": true }
 
-const mapInnerValue = hs`{"x": ${hs.lol.length}}`
-mapInnerValue({lol: ['something']})
-  // => {"x": 1}
+const mapInnerValue = hs`{"x": ${hs.lol.length}}`;
+mapInnerValue({ lol: ["something"] });
+  // => { "x": 1 }
 ```
